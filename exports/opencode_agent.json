@@ -1,0 +1,8 @@
+{
+  "agent_id": "semiconductor-wafer-defect-classifier",
+  "protocol": "opencode/v1",
+  "capabilities": [
+    "autonomous",
+    "governed"
+  ]
+}

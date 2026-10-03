@@ -1,0 +1,5 @@
+{
+  "name": "semiconductor-wafer-defect-classifier",
+  "service": "aws-kiro",
+  "version": "1.0.0"
+}
