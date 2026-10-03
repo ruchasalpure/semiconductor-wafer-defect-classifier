@@ -1,6 +1,0 @@
-app:
-  name: "semiconductor-wafer-defect-classifier"
-  environment: "production"
-  logging:
-    level: "INFO"
-    format: "json"

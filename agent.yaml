@@ -1,26 +1,30 @@
 spec_version: "0.1.0"
-name: "semiconductor-wafer-defect-classifier"
-version: "1.0.0"
-category: "manufacturing"
+name: semiconductor-wafer-defect-classifier
+version: 1.0.0
+description: Classifies spatial pattern defects (scratches, rings, clusters) across 300mm silicon wafer electrical test bins to accelerate fab yield learning.
 author: "Rucha Salpure"
-description: "Classifies spatial pattern defects (scratches, rings, clusters) across 300mm silicon wafer electrical test bins to accelerate fab yield learning"
-capabilities:
-  - "wafer-spatial-defect-clustering"
-  - "autonomous-decision-making"
-  - "explainable-auditing"
-  - "multi-agent-collaboration"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
 skills:
-  - "wafer-spatial-defect-clustering"
-tools:
-  - "python_executor"
-  - "audit_logger"
-  - "schema_validator"
+  - wafer-spatial-defect-clustering
+tools: []
+delegation:
+  mode: auto
 runtime:
-  environment: "python3.11"
-  memory_limit: "4GB"
-  timeout_seconds: 300
-governance:
-  audit_logging: true
-  human_in_the_loop: false
-  maker_checker: true
-  explainability_required: true
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - manufacturing
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/ruchasalpure/semiconductor-wafer-defect-classifier"

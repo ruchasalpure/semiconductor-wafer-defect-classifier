@@ -1,17 +1,25 @@
 ---
-name: "wafer-spatial-defect-clustering"
-description: "Applies Radon transforms and density-based spatial clustering (DBSCAN) to wafer map bin arrays"
-version: "1.0.0"
-category: "manufacturing"
+name: wafer-spatial-defect-clustering
+description: Specialized capability for Semiconductor Wafer Defect Classifier.
+license: MIT
+allowed-tools: ""
+metadata:
+  author: "Rucha Salpure"
+  version: "1.0.0"
+  category: manufacturing
 ---
 
-# Skill: wafer-spatial-defect-clustering
+# Semiconductor Wafer Defect Classifier — WAFER SPATIAL DEFECT CLUSTERING Skill
 
-## Overview
-Applies Radon transforms and density-based spatial clustering (DBSCAN) to wafer map bin arrays.
+## Purpose
+The `wafer-spatial-defect-clustering` capability provides high-assurance execution routines for `Semiconductor Wafer Defect Classifier`.
 
-## Execution Steps
-1. Parse and validate runtime parameters against the formal domain schema.
-2. Execute core computational and heuristic analysis pipeline.
-3. Format structured observations for Maker-Checker dual control review.
-4. Log all telemetry and performance metrics to the governance ledger.
+## Execution Workflow
+1. Validate input parameters against typed schemas and invariant constraints.
+2. Ingest contextual metrics and establish a deterministic baseline.
+3. Formulate candidate recommendations with explicit confidence intervals.
+4. Submit draft plans to the independent checker agent for verification.
+
+## Boundary Conditions
+- **Input validation:** Reject non-conforming or malformed payloads before evaluation.
+- **Fail-safe:** Escalate immediately if telemetry indicators exhibit critical anomalies.
